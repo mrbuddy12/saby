@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="displayPrompt()">
+	<h1>An important to decision to make</h1>
+	<p></p>
+	<button onclick="displayPrompt()">Arey Yaha par click karo yaar</button>
+	<script>
+		function displayPrompt() {
+			var response = prompt("Will you be my lifetime buddy? (Choose Yes or No)");
+			if (response === "Yes" || response === "yes" ) {
+				alert("Kudos!You made a perfect choice");
+			} else if (response === "No" || response === "no") {
+				displayPrompt();
+			} else {
+				alert("Invalid response  , Please write Yes or No).");
+				displayPrompt();
+			}
+		}
+	</script>
+</body>
+</html>
